@@ -3,6 +3,8 @@
 
 ## Write a short comment describing this function
 
+The function makeCache creates the special matrix and compiles the functions for setting the inverse and fetching the inverse from Cache and returns a list
+
 makeCacheMatrix <- function(x = matrix()) {
 m <- NULL
   set <- function(y){
@@ -17,7 +19,10 @@ m <- NULL
 }
 
 
+
 ## Write a short comment describing this function
+
+The Function cachesolve takes the matrix as an input and checks for the cache if the inverse already exists, if not it would call the setinv function to calculate the inverse and getinv to get it
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
